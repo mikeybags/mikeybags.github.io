@@ -2,110 +2,328 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Michael Stuart Mitchell's Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Catamaran|Lato" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+    <!-- Link to Favicon -->
     <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+    <!-- Links to external stylesheets -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/styles.min.css">
+    <!-- Links to JS/Jquery files -->
     <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="./assets/js/scrolling-nav.js"></script>
+    <!-- Links to fonts/icons -->
+    <link href='https://fonts.googleapis.com/css?family=ABeeZee|Raleway' rel='stylesheet'>
     <script src="https://use.fontawesome.com/858515bbf1.js"></script>
   </head>
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-      <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                  <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a id="brand" class="navbar-brand page-scroll" href="#page-top">Michael Stuart Mitchell</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div id="links" class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a class="page-scroll" href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="nav-links page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="nav-links page-scroll" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                      <a class="nav-links page-scroll" href="#resume">Resume</a>
-                    </li>
-                    <li>
-                        <a class="nav-links page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+          </button>
+          <a id="brand" class="navbar-brand page-scroll" href="#page-top">Michael Stuart Mitchell</a>
         </div>
-        <!-- /.container-fluid -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div id="links" class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a class="page-scroll" href="#page-top"></a>
+            </li>
+            <li>
+              <a class="nav-links page-scroll" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-links page-scroll" href="#portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a class="nav-links page-scroll" href="#resume">Resume</a>
+            </li>
+            <li>
+              <a class="nav-links page-scroll" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div> <!-- /#links -->
+      </div> <!-- /.container-fluid -->
     </nav>
-
     <!-- Header Section -->
     <header>
       <div class="header-content">
         <div class="inner-header-content">
-          <img class="img-circle" src="./assets/images/me.jpg" alt="A photo of me"></img>
-          <hr>
-          <p>Full-Stack Web Developer | Live Music Aficianado | Baseball Stat Nerd</p>
+          <img class="img-circle" src="./assets/images/profile/me5.jpg" alt="A photo of me" />
+          <hr />
+          <p><span class="description">Full-Stack Web Developer <i class="fa fa-1 fa-square" aria-hidden="true"></i> Live Music Aficianado <i class="fa fa-square"></i> Baseball Stat Nerd</span></p>
         </div>
       </div>
     </header>
-
-
-
-    <!-- About Section -->
     <section id="about" class="about-section">
+      <div class="container">
+        <div class="col-xs-12">
+          <h1 class="headline">About Me</h1>
+          <hr />
+          <p class="headline-text">I'm a full-stack developer with an insatiable appetite for learning new technologies. I love making visually appealing web applications that make users want to stick around and explore. I seek the thrill of the "a-ha!" moments that occur when solving a complicated problem. In my free time I do my best to keep moving, take in as much great music as possible, and teach my dog new tricks.</p>
+        </div>
+        <div class="col-xs-12">
+          <div class="col-lg-3 col-md-6 category">
+            <div class="category-inner page-scroll" href="#portfolio">
+              <a class="page-scroll" href="#portfolio"><i class="fa fa-5x fa-code" aria-hidden="true"></i></a>
+              <p class="category-text">I have developed full-stack web applications in Python/Django, MEAN Stack, and Ruby On Rails, in addition to mixing and matching frameworks, such as a single-page Rails application using AngularJS and a single-page Python/Django application using ReactJS.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 category">
+            <div class="category-inner">
+              <img class="svg-images" src="./assets/images/svg/hockey.svg" alt="Crossed hockey sticks" />
+              <p class="category-text">I am always looking for new ways to stay in shape and challenge myself physically. If I'm not coding, you can usually find me on the on a hockey rink, a ballfield, my bicycle, or enjoying a beautiful day on a golf course.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 category">
+            <div class="category-inner">
+              <img class="svg-images" src="./assets/images/svg/drummer.svg" alt="A person playing the drums" />
+              <p class="category-text">I have been to almost 100 concerts, and am continually looking to expand my musical horizons. In addition, I play the drums and try to find time to sharpen my drumming skills as often as I can. What better way to relieve stress?</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 category has-modal" data-toggle="modal" data-target="#harveyModal">
+            <div class="category-inner">
+              <img class="svg-images" src="./assets/images/svg/pawprint.svg" alt="A pawprint" />
+              <p class="category-text">After adopting my rat terrier Harvey almost 2 years ago, I began studying dog training techniques, determined to train him myself. I'm extremely fortunate to have found an incredibly smart pup, and training him has taught me as much about myself as it has taught me about how dogs think.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="col-12 text-center">
+          <h1 class="headline">My Portfolio</h1>
+          <hr />
+          <div class="row">
+            <div class="project-outer col-lg-4 col-sm-12">
+              <h2>Fööt</h2>
+              <div class="portfolio-box">
+                <img class="img-responsive portfolio-img" src="./assets/images/portfolio/footStill.png" alt="Fööt project still shot" />
+                <div class="portfolio-cover" data-target="#portfolioModal1" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                      <h4>See it in action!</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="portfolio-description">E-commerce "deal a day" web application built in Python/Django. Users can browse, discuss, and purchase daily deals. Administrators can add items, schedule deals, manage users, and moderate discussion. Created as part of a team of 3 from start to finish in a 5 day sprint. Inspired by woot.com.</p>
+              <a class="btn btn-xl project-btn" href="http://54.187.237.150/">Visit Live Site</a>
+            </div>
+
+            <div class="project-outer col-lg-4 col-sm-12">
+              <h2>Instajam</h2>
+              <div class="portfolio-box">
+                <img class="img-responsive portfolio-img" src="./assets/images/portfolio/instaStill.png" alt="Instajam project still shot" />
+                <div class="portfolio-cover" data-target="#portfolioModal2" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                      <h4>See it in action!</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="portfolio-description">Social music sharing single-page web application built using the MEAN stack. Users can upload, listen to, favorite, comment on, and share songs and playlists, in addition to following other users. Created as part of a team of 3 from start to finish in a 5 day sprint. Inspired by soundcloud.com.</p>
+              <a class="btn btn-xl project-btn" href="http://52.14.233.204/">Visit Live Site</a>
+            </div>
+
+
+            <div class="project-outer col-lg-4 col-sm-12">
+              <h2>Spark</h2>
+              <div class="portfolio-box">
+                <img class="img-responsive portfolio-img" src="./assets/images/portfolio/sparkStill.png" alt="Spark project still shot" />
+                <div class="portfolio-cover" data-target="#portfolioModal3" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                      <h4>See it in action!</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="portfolio-description">An online dating single-page web application made with Ruby on Rails/AngularJS/PostgreSQL. Users can create profiles, view other users, receive compatibility ratings based on their personality profile, and message with mutual matches. Created as part of a team of 3 from start to finish in a 5 day sprint. Inspired by match.com.</p>
+              <a class="btn btn-xl project-btn" href="http://spark-dating.herokuapp.com/">Visit Live Site</a>
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resume" class="resume-section">
+      <div id="resume" class="resume-section">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1>My Resume</h1>
+            <hr />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
       <div>
         <div class="row">
           <div class="col-lg-12">
-              <h1>About Me</h1>
+            <h1>Contact Me</h1>
+            <hr />
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services Section -->
-      <section id="portfolio" class="portfolio-section">
-        <div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>My Portfolio</h1>
+    <!-- Modals -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <h2>F&ouml;&ouml;t</h2>
+                                <hr class="star-primary">
+                                <img class="img-fluid img-centered" src="assets/images/portfolio/foot.gif" alt="Animated image of Fööt website" />
+                                <p>An e-commerce "daily-deal" web application where users can browse, discuss, and purchase daily deals. Administrators can add and schedule deals, manage users, and moderate discussions. Learned Pillow in order to manage file upload.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Technologies:
+                                        <strong>Python, Django, SQL, MySQLite, AWS, HTML, CSS, Javascript, and jQuery.
+                                    </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>January 2017
+                                    </strong>
+                                    </li>
+                                    <li>Link:
+                                        <strong><a target="_blank" href="http://54.187.237.150">F&ouml;&ouml;t</a>
+                                    </strong>
+                                    </li>
+                                    <li>Github:
+                                        <strong><a target="_blank" href="http://github.com/mickajohnson/woot">F&ouml;&ouml;t</a>
+                                    </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </section>
+    </div>
 
-      <!-- Resume Section -->
-      <section id="resume" class="resume-section">
-        <div id="resume" class="resume-section">
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>My Resume</h1>
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
           </div>
         </div>
-      </section>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+              <div class="modal-body">
+                <h2>InstaJam</h2>
+                <hr class="star-primary">
+                <img class="img-fluid img-centered" src="assets/images/portfolio/instajam.gif" alt="Animated image of instajam website" />
+                <p>A single page web application where users can upload, favorite, and comment on songs, create playlists, and follow other users. Uses Angular and AJAX to dynamically alter content. Learned and utilized outside libraries (including Angular
+                  UI, Bcryptjs, Angular-File-Upload, and Wavesurfer.js) in order to achieve the project goals.</p>
+                <ul class="list-inline item-details">
+                  <li>Technologies:
+                    <strong>Technologies: Node.js, Angular, Express, MongoDB, Mongoose, AWS, Bootstrap, Angular UI, HTML, CSS, JavaScript, and jQuery.
+                                     </strong>
+                  </li>
+                  <li>Date:
+                    <strong>February 2017
+                                     </strong>
+                  </li>
+                  <li>Link:
+                    <strong><a target="_blank" href="http://52.14.233.204">InstaJam</a>
+                                     </strong>
+                  </li>
+                  <li>Github:
+                    <strong><a target="_blank" href="http://github.com/mickajohnson/InstaJam">InstaJam</a>
+                                     </strong>
+                  </li>
+                </ul>
+                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Contact Section -->
-      <section id="contact" class="contact-section">
-        <div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>Contact Me</h1>
+     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 offset-lg-2">
+                            <div class="modal-body">
+                                <h2>Spark</h2>
+                                <hr class="star-primary">
+                                <img class="img-fluid img-centered" src="assets/images/portfolio/spark.gif" alt="Animated image of spark website" />
+                                <p>A dating website where users can create profiles, view and message other users, and receive compatibility ratings based on their personality profile. Taught myself how to use Angular in combination with Ruby on Rails in order to have a dynamic, single page application.</p>
+                                <ul class="list-inline item-details">
+                                    <li>Technologies:
+                                        <strong>Ruby, Rails, Angular, PostgreSQL, AWS, Bootstrap, Angular UI, HTML, CSS, JavaScript, and jQuery.
+                                    </strong>
+                                    </li>
+                                    <li>Date:
+                                        <strong>March 2017
+                                    </strong>
+                                    </li>
+                                    <li>Link:
+                                        <strong><a target="_blank" href="http://spark-dating.herokuapp.com">Spark</a>
+                                    </strong>
+                                    </li>
+                                    <li>Github:
+                                        <strong><a target="_blank" href="http://github.com/mickajohnson/spark">Spark</a>
+                                    </strong>
+                                    </li>
+                                </ul>
+                                <button class="btn btn-success" type="button" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-      </section>
+    </div>
 
+    <!-- Harvey Modal -->
+    <div id="harveyModal" class="modal fade" role="dialog">
+      <div class="modal-image">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-body">
+            <img class="modal-img" src="assets/images/profile/harvey.jpg" alt="My dog Harvey" />
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

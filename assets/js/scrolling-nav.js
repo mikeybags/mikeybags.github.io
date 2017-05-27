@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(".navbar-brand").addClass("name-small");
     $(".nav-links").addClass("small-nav-links");
   }
-  //jQuery to collapse the navbar on scroll
+  //jQuery to collapse the navbar on scroll toward bottom of page
   $(window).scroll(function() {
     if ($(".navbar").offset().top > 50) {
       $(".navbar-fixed-top").addClass("top-nav-collapse");
@@ -17,7 +17,7 @@ $(document).ready(function () {
     }
   });
 
-  //jQuery for page scrolling feature - requires jQuery Easing plugin
+  //jQuery for nav link -> scrolling feature - requires jQuery Easing plugin
   $(function() {
     $(document).on('click', 'a.page-scroll', function(event) {
       var $anchor = $(this);
