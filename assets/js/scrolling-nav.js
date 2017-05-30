@@ -61,5 +61,10 @@ $(document).ready(function () {
       }
     });
   });
+  
+  // jquery to remove focus on navbar-brand after click
+  $(".navbar-brand").mouseup(function(){
+    $(this).blur();
+  });
 
 })

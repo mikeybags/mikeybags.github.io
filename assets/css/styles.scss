@@ -1,40 +1,52 @@
 @import 'variables';
 
-body, html {
-  font-family: "Raleway";
+body,
+html {
+  font-family: "PT Sans";
   width: 100%;
   overflow-x: hidden;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Overlock SC";
 }
 
 .navbar {
   font-family: "Overlock SC";
-  border-bottom: 0px;
+  border-bottom: 0;
   @media(min-width:767px) {
     background-color: rgba(255, 255, 255, 0.0);
   }
   @media(max-width:766px) {
     background-color: #FFF;
   }
+
   .navbar-brand {
     @media(max-width:766px) {
       font-size: 19px;
       padding-right: 10px;
       margin-top: 3px;
       color: $primary-color;
+
       &:hover {
         color: $secondary-color;
       }
     }
     @media(min-width:767px) {
       color: #FFF;
+
       &:hover {
         color: #AAA;
+      }
+      &:focus {
+        color: #FFF;
       }
     }
   }
@@ -54,7 +66,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links {
   font-size: 18px;
-
   @media(max-width: 766px) {
     font-size: 16px;
   }
@@ -63,18 +74,18 @@ h1, h2, h3, h4, h5, h6 {
 .navbar {
   @media(min-width:767px) {
     padding: 20px 0;
-    -webkit-transition: background .35s ease-in-out, padding .35s ease-in-out;
-    -moz-transition: background .35s ease-in-out, padding .35s ease-in-out;
-    transition: background .35s ease-in-out, padding .35s ease-in-out;
+    -webkit-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
+    -moz-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
+    transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
   }
 }
 
-.navbar-brand{
+.navbar-brand {
   font-size: 28px;
-  font-weight:bolder;
-  -webkit-transition: all .35s ease-in-out;
-  -moz-transition: all .35s ease-in-out;
-  transition: all .35s ease-in-out;
+  font-weight: bolder;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
 }
 
 .nav .navbar-nav {
@@ -83,9 +94,9 @@ h1, h2, h3, h4, h5, h6 {
       @media(min-width:767px) {
         font-size: 30px;
         color: #777;
-        -webkit-transition: color .35 ease-in-out;
-        -moz-transition: color .35 ease-in-out;
-        transition: color .35 ease-in-out;
+        -webkit-transition: color 0.35 ease-in-out;
+        -moz-transition: color 0.35 ease-in-out;
+        transition: color 0.35 ease-in-out;
       }
     }
   }
@@ -93,22 +104,25 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-nav-collapse {
   border-bottom: 1px solid #CCC;
-
   @media(min-width:767px) {
     padding: 0;
   }
   background-color: #FFF;
+
   #brand {
     color: $primary-color;
+
     &:hover {
       color: $secondary-color;
     }
   }
+
   #links {
     ul {
       li {
         a {
           color: $primary-color;
+
           &:hover {
             color: $secondary-color;
           }
@@ -117,6 +131,7 @@ h1, h2, h3, h4, h5, h6 {
           }
         }
       }
+
       li.active {
         a {
           color: $secondary-color;
@@ -128,7 +143,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #links {
   li.active {
-    a, a:focus, a:hover {
+    a,
+    a:focus,
+    a:hover {
       background-color: white;
       padding: 8px 13px 9px;
       border: 2px solid $secondary-color;
@@ -139,16 +156,19 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+
   li {
     a {
       @media(min-width:767px) {
         color: #FFF;
+
         &:hover {
           color: #AAA;
         }
       }
       @media(max-width:766px) {
         color: $primary-color;
+
         &:hover {
           color: $secondary-color;
         }
@@ -159,14 +179,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .name-small {
   @media(min-width:767px) {
-    font-size:20px;
-    font-weight:normal;
+    font-size: 20px;
+    font-weight: normal;
   }
 }
-
-/* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
-of those sections to manage the look and feel of the site. */
 
 header {
   position: relative;
@@ -180,10 +196,9 @@ header {
 }
 
 .navbar-collapse {
-  -webkit-transition: height .35 ease-in-out;
-  -moz-transition: height .35 ease-in-out;
-  transition: height .35 ease-in-out;
-
+  -webkit-transition: height 0.35 ease-in-out;
+  -moz-transition: height 0.35 ease-in-out;
+  transition: height 0.35 ease-in-out;
 }
 
 .header-content {
@@ -200,18 +215,21 @@ header {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+
   hr {
     color: #FFF;
     background-color: #FFF;
     height: 5px;
     width: 100px;
   }
+
   p {
     font-size: 1.25em;
     font-weight: 200;
     color: #FFF;
     text-align: center;
   }
+
   .fa-square {
     font-size: xx-small;
     vertical-align: middle;
@@ -219,55 +237,87 @@ header {
 }
 
 .resume-section {
-    height: 500px;
-    padding-top: 50px;
-    text-align: center;
-    background: #eee;
-}
-
-.about-section {
-    padding: 50px 0px;
-    text-align: center;
-    background: #FFF;
-}
-
-.portfolio-section {
-  padding: 50px 0px;
+  padding: 50px 0;
   text-align: center;
-  background-color: $primary-color;
+  background: $secondary-color;
   color: #FFF;
+  min-height: 320px;
   hr {
     border-color: #FFF;
     background-color: #FFF;
     height: 5px;
     width: 100px;
   }
+
+  h1 {
+    color: #FFF;
+  }
+}
+
+.about-section {
+  padding: 50px 0;
+  text-align: center;
+  background: #FFF;
+}
+
+.portfolio-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: $primary-color;
+  color: #FFF;
+
+  hr {
+    border-color: #FFF;
+    background-color: #FFF;
+    height: 5px;
+    width: 100px;
+  }
+
   h1 {
     color: #FFF;
   }
 }
 
 .contact-section {
-    height: 800px;
-    padding-top: 50px;
-    text-align: center;
-    background: #fff;
-    color: #777;
-    font-size: 1.25em;
+  padding: 50px 0;
+  text-align: center;
+  background: #fff;
+  color: #777;
+}
+
+.contact-text {
+  font-size: 1.2em;
+  color: #777;
+  -webkit-transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.contact-link {
+  &:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+}
+
+.contact-reveal {
+  margin-top: 40px;
 }
 
 .contact-icons {
   color: $primary-color;
+  -webkit-transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+
+  &:hover {
+    color: $secondary-color
+  }
 }
 
-.icon {
-  visibility: visible;
-  -webkit-transform: scale(1);
-  opacity: 1;
-  transform: scale(1);
-  opacity: 1;
-  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s; transition: transform 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s, opacity 0.6s cubic-bezier(0.6, 0.2, 0.1, 1) 0s;
-}
 .img-circle {
   width: 35%;
   min-width: 200px;
@@ -317,26 +367,20 @@ header {
   font-size: 1.25em;
 }
 
-.project-outer {
-  margin: 40px 0;
-}
-
 .project-btn {
   background-color: #FFF;
   color: $primary-color;
-  border-radius: 15px;
-  box-shadow: 0px 1px 2px 0px #000;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px 0 #000;
   font-size: 1.2em;
   position: relative;
   letter-spacing: 1px;
   overflow: hidden;
   z-index: 1;
   cursor: pointer;
-
-  -webkit-transition: color .35s ease-in-out;
-  -moz-transition: color .35s ease-in-out;
-  transition: color .35s ease-in-out;
-
+  -webkit-transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
 
   &:focus {
     outline: none;
@@ -351,10 +395,10 @@ header {
     bottom: 0;
     background: $secondary-color;
     transform: scaleY(0);
-    transform-origin: 0 0%;
-    -webkit-transition: transform .15s ease-in-out;
-    -moz-transition: transform .15s ease-in-out;
-    transition: transform .15s ease-in-out;
+    transform-origin: 0 0;
+    -webkit-transition: transform 0.15s ease-in-out;
+    -moz-transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
     z-index: -1;
   }
 
@@ -369,12 +413,17 @@ header {
   }
 }
 
+.project-divider {
+  @media(min-width: 1200px) {
+    visibility: hidden;
+  }
+  margin: 60px auto 40px;
+}
 
 .portfolio-box {
   position: relative;
   max-width: 900px;
   margin: 0 auto;
-
 }
 
 .portfolio-cover {
@@ -390,13 +439,15 @@ header {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+
   &:hover {
     opacity: 1;
     cursor: pointer;
   }
 }
 
-.caption-content, .caption {
+.caption,
+.caption-content {
   width: 100%;
   text-align: center;
   position: absolute;
@@ -412,44 +463,123 @@ section hr {
 }
 
 body.modal-open {
-    overflow: auto
+  overflow: auto;
 }
 
 body.modal-open[style] {
-    padding-right: 0px !important
+  padding-right: 0 !important;
 }
 
 .modal::-webkit-scrollbar {
-    width: 0 !important
+  width: 0 !important;
 }
 
 .modal-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 100%;
-    max-height: auto
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-height: auto;
 }
 
 .modal-content {
-    margin: 0 auto;
-    display: inline-block;
-    align-self: center
+  margin: 0 auto;
+  display: inline-block;
+  align-self: center;
 }
 
 .modal-body {
-    position: relative;
-    overflow: hidden;
-    padding: 0px;
-    margin: 0px
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .modal-img {
-    max-width: 90vw;
-    max-height: 90vh;
+  max-width: 90vw;
+  max-height: 90vh;
+}
+
+.portfolio-modal-img {
+  width: 75vw;
 }
 
 .has-modal {
   cursor: pointer;
+}
+
+.resume-img {
+  height: 90vh;
+  max-width: 90vw;
+}
+
+.resume-btn {
+  margin-top: 30px;
+  background-color: #FFF;
+  color: $secondary-color;
+  border-radius: 1px;
+  box-shadow: 0 1px 2px 0 #000;
+  font-size: 1.2em;
+  position: relative;
+  letter-spacing: 1px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $primary-color;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    -webkit-transition: transform 0.15s ease-in-out;
+    -moz-transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #FFF;
+    background-color: #FFF;
+
+    &:before {
+      transform: scaleY(1);
+      transition-timing-function: ease-out;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  height: 400px;
+  text-align: center;
+  background-image: url("../images/background/background1.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  color: #AAA;
+}
+
+.footer-content {
+  position: absolute;
+  top: 50%;
+  width: 75%;
+  left: 12.5%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 0 50px;
+  background: rgba(0, 0 ,0, 0.7);
 }
