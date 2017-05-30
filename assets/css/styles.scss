@@ -296,6 +296,10 @@ header {
   }
 }
 
+.phone-number {
+  font-size: 1.2em;
+  color: #777;
+}
 .contact-link {
   &:hover {
     color: $secondary-color;
