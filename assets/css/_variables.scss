@@ -1,21 +1,19 @@
 // === FONTS ===
-$text-font: 'Catamaran', sans-serif;
-$headline-font: 'Lato', sans-serif;
+$text-font: 'PT Sans', sans-serif;
+$headline-font: 'Overlock SC', sans-serif;
 
 // === COLORS ==
 $primary-color: #5CACEE;
 $secondary-color: #42647F;
-$tertiary-color: #0093D1;
 $orange-color: #E0A025;
 $gold-color: #F4D00C;
-$nav-link: #DDDDDD;
-$nav-active: #FFFFFF;
-$bright-blue: #4080FF;
+$white: #FFFFFF;
+$gray-text: #777777;
+$dark-gray: #333333;
+$nav-link-hover: #AAAAAA;
 
 // === LAYOUT ===
-$nav-height: 40px;
-$nav-form-height: 25px;
-$small-picture: 150px;
+$section-padding: 50px 0;
 
 // === OTHER ===
-$list-shadow: 2px 2px 2px #CCC;
+$btn-shadow: 0 1px 2px 0 #000;

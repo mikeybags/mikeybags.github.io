@@ -2,7 +2,7 @@
 
 body,
 html {
-  font-family: "PT Sans";
+  font-family: $text-font;
   width: 100%;
   overflow-x: hidden;
   margin: 0;
@@ -15,17 +15,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Overlock SC";
+  font-family: $headline-font;
 }
 
 .navbar {
-  font-family: "Overlock SC";
+  font-family: $headline-font;
   border-bottom: 0;
   @media(min-width:767px) {
     background-color: rgba(255, 255, 255, 0.0);
   }
   @media(max-width:766px) {
-    background-color: #FFF;
+    background-color: $white;
   }
 
   .navbar-brand {
@@ -40,13 +40,13 @@ h6 {
       }
     }
     @media(min-width:767px) {
-      color: #FFF;
+      color: $white;
 
       &:hover {
-        color: #AAA;
+        color: $nav-link-hover;
       }
       &:focus {
-        color: #FFF;
+        color: $white;
       }
     }
   }
@@ -57,11 +57,11 @@ h6 {
 }
 
 .white-font {
-  color: #FFF;
+  color: $white;
 }
 
 .gray-font {
-  color: #333;
+  color: $dark-gray;
 }
 
 .nav-links {
@@ -82,7 +82,6 @@ h6 {
 
 .navbar-brand {
   font-size: 28px;
-  font-weight: bolder;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
@@ -93,7 +92,7 @@ h6 {
     a {
       @media(min-width:767px) {
         font-size: 30px;
-        color: #777;
+        color: $gray-text;
         -webkit-transition: color 0.35 ease-in-out;
         -moz-transition: color 0.35 ease-in-out;
         transition: color 0.35 ease-in-out;
@@ -107,7 +106,7 @@ h6 {
   @media(min-width:767px) {
     padding: 0;
   }
-  background-color: #FFF;
+  background-color: $white;
 
   #brand {
     color: $primary-color;
@@ -159,11 +158,14 @@ h6 {
 
   li {
     a {
+      -webkit-transition: color 0.35s ease-in-out;
+      -moz-transition: color 0.35s ease-in-out;
+      transition: color 0.35s ease-in-out;
       @media(min-width:767px) {
-        color: #FFF;
+        color: $white;
 
         &:hover {
-          color: #AAA;
+          color: $nav-link-hover;
         }
       }
       @media(max-width:766px) {
@@ -192,7 +194,6 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  color: #AAA;
 }
 
 .navbar-collapse {
@@ -217,8 +218,8 @@ header {
   margin-right: auto;
 
   hr {
-    color: #FFF;
-    background-color: #FFF;
+    color: $white;
+    background-color: $white;
     height: 5px;
     width: 100px;
   }
@@ -226,7 +227,7 @@ header {
   p {
     font-size: 1.25em;
     font-weight: 200;
-    color: #FFF;
+    color: $white;
     text-align: center;
   }
 
@@ -237,57 +238,57 @@ header {
 }
 
 .resume-section {
-  padding: 50px 0;
+  padding: $section-padding;
   text-align: center;
   background: $secondary-color;
-  color: #FFF;
+  color: $white;
   min-height: 320px;
   hr {
-    border-color: #FFF;
-    background-color: #FFF;
+    border-color: $white;
+    background-color: $white;
     height: 5px;
     width: 100px;
   }
 
   h1 {
-    color: #FFF;
+    color: $white;
   }
 }
 
 .about-section {
-  padding: 50px 0;
+  padding: $section-padding;
   text-align: center;
-  background: #FFF;
+  background: $white;
 }
 
 .portfolio-section {
-  padding: 50px 0;
+  padding: $section-padding;
   text-align: center;
   background-color: $primary-color;
-  color: #FFF;
+  color: $white;
 
   hr {
-    border-color: #FFF;
-    background-color: #FFF;
+    border-color: $white;
+    background-color: $white;
     height: 5px;
     width: 100px;
   }
 
   h1 {
-    color: #FFF;
+    color: $white;
   }
 }
 
 .contact-section {
-  padding: 50px 0;
+  padding: $section-padding;
   text-align: center;
-  background: #fff;
-  color: #777;
+  background: $white;
+  color: $gray-text;
 }
 
 .contact-text {
   font-size: 1.2em;
-  color: #777;
+  color: $gray-text;
   -webkit-transition: color 0.35s ease-in-out;
   -moz-transition: color 0.35s ease-in-out;
   transition: color 0.35s ease-in-out;
@@ -298,7 +299,7 @@ header {
 
 .phone-number {
   font-size: 1.2em;
-  color: #777;
+  color: $gray-text;
 }
 
 .contact-link {
@@ -339,7 +340,7 @@ header {
 }
 
 .category-text {
-  color: #777;
+  color: $gray-text;
   font-size: 1.2em;
   margin-top: 15px;
   min-height: 138px;
@@ -368,15 +369,15 @@ header {
 }
 
 .headline-text {
-  color: #777;
+  color: $gray-text;
   font-size: 1.25em;
 }
 
 .project-btn {
-  background-color: #FFF;
+  background-color: $white;
   color: $primary-color;
   border-radius: 1px;
-  box-shadow: 0 1px 2px 0 #000;
+  box-shadow: $btn-shadow;
   font-size: 1.2em;
   position: relative;
   letter-spacing: 1px;
@@ -408,8 +409,8 @@ header {
   }
 
   &:hover {
-    color: #FFF;
-    background-color: #FFF;
+    color: $white;
+    background-color: $white;
 
     &:before {
       transform: scaleY(1);
@@ -432,7 +433,7 @@ header {
 }
 
 .portfolio-cover {
-  color: white;
+  color: $white;
   opacity: 0;
   display: block;
   background: rgba(0,0,0,.7);
@@ -521,10 +522,10 @@ body.modal-open[style] {
 
 .resume-btn {
   margin-top: 30px;
-  background-color: #FFF;
+  background-color: $white;
   color: $secondary-color;
   border-radius: 1px;
-  box-shadow: 0 1px 2px 0 #000;
+  box-shadow: $btn-shadow;
   font-size: 1.2em;
   position: relative;
   letter-spacing: 1px;
@@ -556,8 +557,8 @@ body.modal-open[style] {
   }
 
   &:hover {
-    color: #FFF;
-    background-color: #FFF;
+    color: $white;
+    background-color: $white;
 
     &:before {
       transform: scaleY(1);
@@ -574,7 +575,14 @@ footer {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  color: #AAA;
+  color: $gray-text;
+  a {
+    color: $primary-color;
+    &:hover {
+      color: $secondary-color;
+      text-decoration: none;
+    }
+  }
 }
 
 .footer-content {
