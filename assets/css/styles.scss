@@ -194,6 +194,9 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
+  @media(max-width: 766px) {
+    background-image: url("../images/background/background4mobile.jpg");
+  }
 }
 
 .navbar-collapse {
@@ -569,7 +572,7 @@ body.modal-open[style] {
 
 footer {
   position: relative;
-  height: 400px;
+  height: 500px;
   text-align: center;
   background-image: url("../images/background/background1.jpg");
   background-size: cover;
@@ -582,6 +585,9 @@ footer {
       color: $secondary-color;
       text-decoration: none;
     }
+  }
+  @media(max-width: 766px) {
+    background-image: url("../images/background/background1mobile.jpg");
   }
 }
 
