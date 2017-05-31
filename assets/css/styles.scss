@@ -194,7 +194,7 @@ header {
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  @media(max-width: 766px) {
+  @media(max-width: 1024px) {
     background-image: url("../images/background/background4mobile.jpg");
   }
 }
@@ -586,7 +586,7 @@ footer {
       text-decoration: none;
     }
   }
-  @media(max-width: 766px) {
+  @media(max-width: 1024px) {
     background-image: url("../images/background/background1mobile.jpg");
   }
 }
