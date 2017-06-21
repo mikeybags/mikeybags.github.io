@@ -9,7 +9,7 @@
   <!-- Link to Favicon -->
   <link rel="icon" type="image/png" href="./assets/images/favicon.png" />
   <!-- Links to external stylesheets -->
-  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">  <!--<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />-->
   <link rel="stylesheet" href="./assets/css/styles.min.css" />
   <!-- Links to fonts/icons -->
   <link href="https://fonts.googleapis.com/css?family=Overlock+SC|PT+Sans" rel="stylesheet">
@@ -265,13 +265,33 @@
       </div>
     </div>
   </div>
+  <!-- div to test for bootstrap CDN loading -->
+  <div id="bootstrapCssTest" class="hidden"></div>
+  
+  <!-- JS CDNs/Local Fallbacks/etc -->
+
   <!-- Links to JS/Jquery files -->
-  <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
-  <script src="./assets/js/jquery.easing.min.js"></script>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- jQuery local fallback -->
+  <script>window.jQuery || document.write('<script src="./assets/js/jquery-3.2.1.min.js"><\/script>')</script>
+  <!-- Bootstrap JS CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Bootstrap JS local fallback -->
+  <script>if(typeof($.fn.modal) === 'undefined') {document.write('<script src="./assets/js/bootstrap.min.js"><\/script>')}</script>
+  <!-- Bootstrap CSS local fallback -->
+  <script>
+    $(function() {
+      if ($('#bootstrapCssTest').is(':visible')) {
+        $("head").prepend('<link rel="stylesheet" href="./assets/css/bootstrap.min.css">');
+      }
+    });
+  </script>
+  <script type="text/javascript" src="./assets/js/jquery.easing.min.js"></script>
   <script type="text/javascript" src="./assets/js/scrolling-nav.js"></script>
-  <script src="https://use.fontawesome.com/858515bbf1.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript" src="https://use.fontawesome.com/858515bbf1.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
   <!-- ScrollReveal calls -->
   <script>
