@@ -514,14 +514,14 @@ body.modal-open[style] {
 .close-modal {
   position: absolute;
   background-color: transparent;
-  top: 10px;
-  right: 10px;
+  right: 5px;
 }
 
 .fa-times {
-  color: $white;
+  color: black;
+  opacity: .5;
   &:hover {
-    color: $nav-link-hover;
+    opacity: 1;
   }
 }
 
