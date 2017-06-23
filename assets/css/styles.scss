@@ -76,9 +76,9 @@ h6 {
     padding: 20px 0;
     will-change: padding;
     will-change: background;
-    -webkit-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
-    -moz-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
-    transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
+    -webkit-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out, border 0.35s ease-in-out;
+    -moz-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out, border 0.35s ease-in-out;
+    transition: background 0.35s ease-in-out, padding 0.35s ease-in-out, border 0.35s ease-in-out;
   }
 }
 
