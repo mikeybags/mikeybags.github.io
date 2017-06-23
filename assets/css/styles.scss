@@ -192,12 +192,12 @@ header {
   position: relative;
   height: 700px;
   text-align: center;
-  background-image: url("../images/background/background4edited.jpg");
-  background-position: center center;
+  // background-image: url("../images/background/background4edited.jpg");
+  // background-position: center center;
   // background-attachment: fixed;
-  @media(max-width: 1024px) {
-    background-image: url("../images/background/background4mobile.jpg");
-  }
+  // @media(max-width: 1024px) {
+  //   background-image: url("../images/background/background4mobile.jpg");
+  // }
 }
 
 .navbar-collapse {
@@ -589,10 +589,10 @@ footer {
   position: relative;
   height: 500px;
   text-align: center;
-  background-image: url("../images/background/background1edited.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
+  // background-image: url("../images/background/background1edited.jpg");
+  // background-size: cover;
+  // background-position: center center;
+  // background-attachment: fixed;
   color: $gray-text;
   a {
     color: $primary-color;
@@ -601,9 +601,9 @@ footer {
       text-decoration: none;
     }
   }
-  @media(max-width: 1024px) {
-    background-image: url("../images/background/background1mobile.jpg");
-  }
+  // @media(max-width: 1024px) {
+  //   background-image: url("../images/background/background1mobile.jpg");
+  // }
 }
 
 .footer-content {

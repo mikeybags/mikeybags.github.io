@@ -59,8 +59,19 @@ $(document).ready(function () {
     });
   });
   
+  // javascript for parallax
+  if ($(window).width() >= 1024) {
+    $('#header').parallax({imageSrc: './assets/images/background/background4edited.jpg'});
+    $('#footer').parallax({imageSrc: './assets/images/background/background1edited.jpg'});
+  } else {
+    $('#header').parallax({imageSrc: './assets/images/background/background4mobile.jpg'});
+    $('#footer').parallax({imageSrc: './assets/images/background/background1mobile.jpg'});
+
+  }
   // jquery to remove focus on navbar-brand after click
   $(".navbar-brand").mouseup(function(){
     $(this).blur();
   });
 });
+
+
