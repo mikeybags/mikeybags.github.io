@@ -63,5 +63,4 @@ $(document).ready(function () {
   $(".navbar-brand").mouseup(function(){
     $(this).blur();
   });
-
-})
+});
