@@ -74,6 +74,8 @@ h6 {
 .navbar {
   @media(min-width:767px) {
     padding: 20px 0;
+    will-change: padding;
+    will-change: background;
     -webkit-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
     -moz-transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
     transition: background 0.35s ease-in-out, padding 0.35s ease-in-out;
@@ -158,9 +160,9 @@ h6 {
 
   li {
     a {
-      -webkit-transition: color 0.35s ease-in-out;
-      -moz-transition: color 0.35s ease-in-out;
-      transition: color 0.35s ease-in-out;
+      -webkit-transition: color 0.35s ease-in-out, font-size 0.35s ease-in-out;
+      -moz-transition: color 0.35s ease-in-out, font-size 0.35s ease-in-out;
+      transition: color 0.35s ease-in-out, font-size 0.35s ease-in-out;
       @media(min-width:767px) {
         color: $white;
 
@@ -191,9 +193,8 @@ header {
   height: 700px;
   text-align: center;
   background-image: url("../images/background/background4edited.jpg");
-  background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   @media(max-width: 1024px) {
     background-image: url("../images/background/background4mobile.jpg");
   }

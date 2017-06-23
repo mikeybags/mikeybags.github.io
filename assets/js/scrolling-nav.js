@@ -4,8 +4,8 @@ $(document).ready(function () {
     $(".navbar-brand").addClass("name-small");
     $(".nav-links").addClass("small-nav-links");
   }
-  //jQuery to collapse the navbar on scroll toward bottom of page
   $(window).scroll(function() {
+  //Collapse the navbar on scroll toward bottom of page
     if ($(".navbar").offset().top > 50) {
       $(".navbar-fixed-top").addClass("top-nav-collapse");
       $(".navbar-brand").addClass("name-small");
@@ -15,25 +15,7 @@ $(document).ready(function () {
       $(".navbar-brand").removeClass("name-small");
       $(".nav-links").removeClass("small-nav-links");
     }
-  });
-
-  //jQuery for nav link -> scrolling feature - requires jQuery Easing plugin
-  $(function() {
-    $(document).on('click', 'a.page-scroll', function(event) {
-      var $anchor = $(this);
-      $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top - 50
-      }, 1250, 'easeInOutExpo');
-      event.preventDefault();
-      setTimeout(function(){
-        $("#links").removeClass("in");
-      }, 1300);
-    });
-  });
-
-
-  // jQuery to 'highlight' proper link in navbar based on page position
-  $(window).on("scroll", function() {
+    // jQuery to 'highlight' proper link in navbar based on page position
     var currentPos = $(window).scrollTop();
 
     $('.nav li a').each(function() {
@@ -59,6 +41,21 @@ $(document).ready(function () {
           sectionLink.parent().removeClass('active');
         }
       }
+    });
+
+  });
+
+  //jQuery for nav link -> scrolling feature - requires jQuery Easing plugin
+  $(function() {
+    $(document).on('click', 'a.page-scroll', function(event) {
+      var $anchor = $(this);
+      $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top - 50
+      }, 1250, 'easeInOutExpo');
+      event.preventDefault();
+      setTimeout(function(){
+        $("#links").removeClass("in");
+      }, 1300);
     });
   });
   
