@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  // if page is already scrolled down upon a load, use collapsed nav bar
   if ($(".navbar").offset().top > 50) {
     $(".navbar-fixed-top").addClass("top-nav-collapse");
     $(".navbar-brand").addClass("name-small");
