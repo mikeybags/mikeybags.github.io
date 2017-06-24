@@ -518,10 +518,10 @@ body.modal-open[style] {
 }
 
 .fa-times {
-  color: black;
-  opacity: .5;
+  color: $nav-link-hover;
+  cursor: pointer;
   &:hover {
-    opacity: 1;
+    opacity: .7;
   }
 }
 
