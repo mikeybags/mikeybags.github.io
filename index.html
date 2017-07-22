@@ -225,7 +225,7 @@
           <div class="close-modal" data-dismiss="modal">
             <i class="fa fa-2x fa-times"></i>
           </div>
-          <img class="portfolio-modal-img" src="assets/images/portfolio/foot.gif" alt="Animated image of fööt website" />
+          <img class="portfolio-modal-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/portfolio/foot.gif" alt="Animated image of fööt website" />
         </div>
       </div>
     </div>
@@ -237,7 +237,7 @@
           <div class="close-modal" data-dismiss="modal">
             <i class="fa fa-2x fa-times"></i>
           </div>
-          <img class="portfolio-modal-img" src="assets/images/portfolio/instajam.gif" alt="Animated image of instajam website" />
+          <img class="portfolio-modal-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/portfolio/instajam.gif" alt="Animated image of instajam website" />
         </div>
       </div>
     </div>
@@ -249,7 +249,7 @@
           <div class="close-modal" data-dismiss="modal">
             <i class="fa fa-2x fa-times"></i>
           </div>
-          <img class="portfolio-modal-img" src="assets/images/portfolio/spark.gif" alt="Animated image of spark website" />
+          <img class="portfolio-modal-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="assets/images/portfolio/spark.gif" alt="Animated image of spark website" />
         </div>
       </div>
     </div>
@@ -343,6 +343,18 @@
       mf.src = "//cdn.mouseflow.com/projects/d24a1a9d-6796-4fb8-bccd-35ba00e38b49.js";
       document.getElementsByTagName("head")[0].appendChild(mf);
     })();
+  </script>
+
+  <!-- Lazy Load GIFs for quicker page load-->
+  <script>
+    window.addEventListener('load', function(){
+      var allimages= document.getElementsByTagName('img');
+      for (var i=0; i<allimages.length; i++) {
+          if (allimages[i].getAttribute('data-src')) {
+              allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+          }
+      }
+    }, false)
   </script>
 </body>
 

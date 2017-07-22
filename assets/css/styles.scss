@@ -21,15 +21,15 @@ h6 {
 .navbar {
   font-family: $headline-font;
   border-bottom: 0;
-  @media(min-width:767px) {
+  @media(min-width:768px) {
     background-color: rgba(255, 255, 255, 0.0);
   }
-  @media(max-width:766px) {
+  @media(max-width:767px) {
     background-color: $white;
   }
 
   .navbar-brand {
-    @media(max-width:766px) {
+    @media(max-width:767px) {
       font-size: 19px;
       padding-right: 10px;
       margin-top: 3px;
@@ -39,7 +39,7 @@ h6 {
         color: $secondary-color;
       }
     }
-    @media(min-width:767px) {
+    @media(min-width:768px) {
       color: $white;
 
       &:hover {
@@ -66,13 +66,13 @@ h6 {
 
 .nav-links {
   font-size: 18px;
-  @media(max-width: 766px) {
+  @media(max-width: 767px) {
     font-size: 16px;
   }
 }
 
 .navbar {
-  @media(min-width:767px) {
+  @media(min-width:768px) {
     padding: 20px 0;
     will-change: padding;
     will-change: background;
@@ -92,7 +92,7 @@ h6 {
 .nav .navbar-nav {
   li {
     a {
-      @media(min-width:767px) {
+      @media(min-width:768px) {
         font-size: 30px;
         color: $gray-text;
         -webkit-transition: color 0.35 ease-in-out;
@@ -105,7 +105,7 @@ h6 {
 
 .top-nav-collapse {
   border-bottom: 1px solid #CCC;
-  @media(min-width:767px) {
+  @media(min-width:768px) {
     padding: 0;
   }
   background-color: $white;
@@ -127,7 +127,7 @@ h6 {
           &:hover {
             color: $secondary-color;
           }
-          @media(min-width:767px) {
+          @media(min-width:768px) {
             font-size: 16px;
           }
         }
@@ -151,7 +151,7 @@ h6 {
       padding: 8px 13px 9px;
       border: 2px solid $secondary-color;
       border-radius: 1px;
-      @media(min-width:767px) {
+      @media(min-width:768px) {
         margin-top: 5px;
         box-shadow: 1px 1px 4px -2px black;
       }
@@ -163,14 +163,14 @@ h6 {
       -webkit-transition: color 0.35s ease-in-out, font-size 0.35s ease-in-out;
       -moz-transition: color 0.35s ease-in-out, font-size 0.35s ease-in-out;
       transition: color 0.35s ease-in-out, font-size 0.35s ease-in-out;
-      @media(min-width:767px) {
+      @media(min-width:768px) {
         color: $white;
 
         &:hover {
           color: $nav-link-hover;
         }
       }
-      @media(max-width:766px) {
+      @media(max-width:767px) {
         color: $primary-color;
 
         &:hover {
@@ -182,7 +182,7 @@ h6 {
 }
 
 .name-small {
-  @media(min-width:767px) {
+  @media(min-width:768px) {
     font-size: 20px;
     font-weight: normal;
   }
@@ -324,7 +324,10 @@ header {
   transition: color 0.35s ease-in-out;
 
   &:hover {
-    color: $secondary-color
+    color: $secondary-color;
+    .contact-text {
+      color: $secondary-color;
+    }
   }
 }
 
