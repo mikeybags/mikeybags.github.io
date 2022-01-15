@@ -17,7 +17,6 @@ h5,
 h6 {
   font-family: $headline-font;
 }
-
 .navbar {
   font-family: $headline-font;
   border-bottom: 0;
@@ -381,6 +380,52 @@ header {
 }
 
 .project-btn {
+  background-color: $white;
+  color: $primary-color;
+  border-radius: 1px;
+  box-shadow: $btn-shadow;
+  font-size: 1.2em;
+  position: relative;
+  letter-spacing: 1px;
+  overflow: hidden;
+  z-index: 1;
+  cursor: pointer;
+  -webkit-transition: color 0.35s ease-in-out;
+  -moz-transition: color 0.35s ease-in-out;
+  transition: color 0.35s ease-in-out;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $secondary-color;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    -webkit-transition: transform 0.15s ease-in-out;
+    -moz-transition: transform 0.15s ease-in-out;
+    transition: transform 0.15s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $white;
+
+    &:before {
+      transform: scaleY(1);
+      transition-timing-function: ease-out;
+    }
+  }
+}
+
+.project-btn-disabled {
   background-color: $white;
   color: $primary-color;
   border-radius: 1px;
